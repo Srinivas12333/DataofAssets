@@ -62,30 +62,30 @@ function Getdata() {
       e.preventDefault()
       let data = {
         "employeeName": employeename,
-        "employeeId": "string",
-        "location": "string",
-        "client": "string",
-        "designation": "string",
-        "laptopTypeModel": "string",
-        "processor": "string",
-        "ram": "string",
-        "storageType": "string",
-        "serialNumber": "string",
-        "adaptorSerialNumber": "string",
-        "softwares": "string",
-        "officialEmail": "string",
-        "licenses": "string",
-        "department": "string",
-        "contactNumber": "string",
-        "assetCode": "string",
-        "assetOwner": "string",
-        "assetHandOverDate": "2022-06-17T11:14:48.622Z",
-        "operatingSystem": "string",
-        "keyBoard": "string",
-        "mouse": "string",
-        "status": "string",
-        "receivedfrom": "string",
-        "remarks": "string"
+        "employeeId": employeeid,
+        "location": location,
+        "client": client,
+        "designation": designation,
+        "laptopTypeModel": laptoptypemodel,
+        "processor": processor,
+        "ram": ram,
+        "storageType": storagetype,
+        "serialNumber": serialnumber,
+        "adaptorSerialNumber": adaptorserialnumber,
+        "softwares": softwares,
+        "officialEmail": officialemail,
+        "licenses": licenses,
+        "department": department,
+        "contactNumber": contactnumber,
+        "assetCode": assetcode,
+        "assetOwner": assetowner,
+        "assetHandOverDate":assethandoverdate,
+        "operatingSystem": operatingsystem,
+        "keyBoard": keyboard,
+        "mouse": mouse,
+        "status": status,
+        "receivedfrom":recivedfrom,
+        "remarks": remarks
       }
       axios.put(`https://localhost:44334/api/data/${updateId}` ,data)
       .then(res => getDataDB())
@@ -207,151 +207,151 @@ function Getdata() {
                                   <div className='input-box '>
                                     <span className='details'>Employee Name</span>
                                     <input type='text' placeholder='Enter employee name' 
-                                            // value={employeename}
+                                            defaultValue={detailData.employeeName}
                                             onChange={(e)=>{setEmployeeName(e.target.value)}} />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Employee Id</span>
-                                    <input type='text' placeholder='Enter employee id'  value={detailData.employeeId}
+                                    <input type='text' placeholder='Enter employee id'  defaultValue={detailData.employeeId}
                                     onChange={(e)=>{setEmployeeId(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Location</span>
-                                    <input type='text' placeholder='Enter employee location'  value={detailData.location}
+                                    <input type='text' placeholder='Enter employee location'  defaultValue={detailData.location}
                                     onChange={(e)=>{setLocation(e.target.value)}} />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Client</span>
-                                    <input type='text' placeholder='Enter client name'  value={detailData.client}
+                                    <input type='text' placeholder='Enter client name'  defaultValue={detailData.client}
                                     onChange={(e)=>{setClient(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Designation</span>
-                                    <input type='text' placeholder='Enter employee designation'  value={detailData.designation}
+                                    <input type='text' placeholder='Enter employee designation'  defaultValue={detailData.designation}
                                     onChange={(e)=>{setDesignation(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Laptop Type&Model</span>
-                                    <input type='text' placeholder='laptop details' value={detailData.laptopTypeModel}
+                                    <input type='text' placeholder='laptop details' defaultValue={detailData.laptopTypeModel}
                                     onChange={(e)=>{setLaptopTypeModel(e.target.value)}}  />
                                   </div>
                                   <div className='input-box '>
                                     <span className='details'>Processor</span>
-                                    <input type='text' placeholder='processor details'  value={detailData.processor}
+                                    <input type='text' placeholder='processor details'  defaultValue={detailData.processor}
                                     onChange={(e)=>{setProcessor(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Ram</span>
-                                    <input type='text' placeholder='Enter ram size'  value={detailData.ram}
+                                    <input type='text' placeholder='Enter ram size'  defaultValue={detailData.ram}
                                     onChange={(e)=>{setRam(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Storage Type</span>
-                                    <input type='text' placeholder='Enter storage & type' value={detailData.storageType}
+                                    <input type='text' placeholder='Enter storage & type' defaultValue={detailData.storageType}
                                     onChange={(e)=>{setStorageType(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Serial Number</span>
-                                    <input type='text' placeholder='Enter serial number' value={detailData.serialNumber}
+                                    <input type='text' placeholder='Enter serial number' defaultValue={detailData.serialNumber}
                                     onChange={(e)=>{setSerialNumber(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Adaptor Serialnumber</span>
-                                    <input type='text' placeholder='Adaptor serialnumber'  value={detailData.adaptorSerialNumber}
+                                    <input type='text' placeholder='Adaptor serialnumber'  defaultValue={detailData.adaptorSerialNumber}
                                     onChange={(e)=>{setAdaptorSerialNumber(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Softwares</span>
-                                    <input type='text' placeholder='Enter softwares'  value={detailData.softwares}
+                                    <input type='text' placeholder='Enter softwares'  defaultValue={detailData.softwares}
                                     onChange={(e)=>{setSoftwares(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Official Email</span>
-                                    <input type='email' placeholder='Enter email'value={detailData.officialEmail}
+                                    <input type='email' placeholder='Enter email'defaultValue={detailData.officialEmail}
                                     onChange={(e)=>{setOfficialEmail(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Licenses</span>
-                                    <input type='text' placeholder='Enter licenses' value={detailData.licenses}
+                                    <input type='text' placeholder='Enter licenses' defaultValue={detailData.licenses}
                                     onChange={(e)=>{setLincenses(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Department</span>
-                                    <input type='text' placeholder='Type of department'value={detailData.department}
+                                    <input type='text' placeholder='Type of department'defaultValue={detailData.department}
                                     onChange={(e)=>{setDepartment(e.target.value)}} />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Contact Number</span>
-                                    <input type='text' placeholder='Enter contact number'value={detailData.contactNumber}
+                                    <input type='text' placeholder='Enter contact number'defaultValue={detailData.contactNumber}
                                     onChange={(e)=>{setContactNumber(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Asset Code</span>
-                                    <input type='text' placeholder='Enter asset code'value={detailData.assetCode}
+                                    <input type='text' placeholder='Enter asset code'defaultValue={detailData.assetCode}
                                     onChange={(e)=>{setAssetCode(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Asset Owner</span>
-                                    <input type='text' placeholder='Enter asset owner'value={detailData.assetOwner}
+                                    <input type='text' placeholder='Enter asset owner'defaultValue={detailData.assetOwner}
                                     onChange={(e)=>{setAssetOwner(e.target.value)}}  />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Asset Handover Date</span>
-                                    <input type='date' value={detailData.assethandOverDate} placeholder='dd-mm-yyyy'
+                                    <input type='date' defaultValue={detailData.assethandOverDate} placeholder='dd-mm-yyyy'
                                     onChange={(e)=>{setAssetHandoverDate(e.target.value)}}/>
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Operating system</span>
-                                    <input type='text' placeholder='Type of operating system' value={detailData.operatingSystem}
+                                    <input type='text' placeholder='Type of operating system' defaultValue={detailData.operatingSystem}
                                     onChange={(e)=>{setOperatingSystem(e.target.value)}} />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Keyboard</span>
-                                    <input type='text' placeholder='Keyboard'value={detailData.keyboard}
+                                    <input type='text' placeholder='Keyboard'defaultValue={detailData.keyboard}
                                     onChange={(e)=>{setKeyboard(e.target.value)}}/>
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Mouse</span>
-                                    <input type='text' placeholder='Mouse' value={detailData.mouse}
+                                    <input type='text' placeholder='Mouse' defaultValue={detailData.mouse}
                                     onChange={(e)=>{setMouse(e.target.value)}} />
                                     
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Status</span>
-                                    <input type='text'placeholder='Active or Inactive'value={detailData.status}
+                                    <input type='text'placeholder='Active or Inactive'defaultValue={detailData.status}
                                     onChange={(e)=>{setStatus(e.target.value)}} />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Received From</span>
-                                    <input type='text'placeholder='Received From'value={detailData.receivedfrom}
+                                    <input type='text'placeholder='Received From'defaultValue={detailData.receivedfrom}
                                     onChange={(e)=>{setReceivedFrom(e.target.value)}} />
                                   </div>
 
                                   <div className='input-box '>
                                     <span className='details'>Remarks</span>
-                                    <input type='text' placeholder='Any remarks' value={detailData.remarks}
+                                    <input type='text' placeholder='Any remarks' defaultValue={detailData.remarks}
                                     onChange={(e)=>{setRemarks(e.target.value)}}/> 
                                   </div>
                                 </div>

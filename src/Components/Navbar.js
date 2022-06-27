@@ -24,8 +24,10 @@ function Navbar() {
               
               
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <Link to="/postdata">Postdata</Link> 
-              <Link to="/getdata">Getdata</Link>
+              <Link to="/postdata">Post Data</Link> <br/>
+              <Link to="/getdata">Get Data</Link> <br/>
+              <Link to="/stocklist">Stock List</Link> <br/>
+              <Link to="/aboutus">Contact Us</Link>
                
               </ul>
             </li>
